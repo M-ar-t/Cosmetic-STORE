@@ -1,0 +1,29 @@
+{
+    "data": {
+      "products":[
+        {
+        "img":"./src/img/inst shots (1).png",
+        "article":"",
+        "title":"soft finish",
+        "id":0
+      },
+        {
+        "img":"",
+        "article":"",
+        "title":"",
+        "id":0
+      }
+    ]
+    },
+    "included": [
+      {
+        "type": "people",
+        "id": "42",
+        "attributes": {
+          "name": "John",
+          "age": 80,
+          "gender": "male"
+        }
+      }
+    ]
+  }

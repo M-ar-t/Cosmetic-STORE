@@ -28,7 +28,7 @@ const ShopAll =() =>{
           <button id ={el.id} className={s.product_btn} onClick={()=>{
             addToCart(el)         
             dipatch({type:"CLIK-BUTTON"})
-            setTimeout(()=> dipatch({type:"CLIK-BUTTON"}),1500)      
+            setTimeout(()=> dipatch({type:"CLIK-BUTTON"}),1000)      
           }}>Add to bag</button>
         </div>)
 })}

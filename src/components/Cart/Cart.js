@@ -33,12 +33,11 @@ const Cart = () => {
     const priceReady = count * Number(price.replace(' ',''))
     dipatch({type:"TOTAL-SUM-DEC-ALL", payload:{priceReady, id}})
     dipatch({type:"DELETE-PRODUCT", id})
-
     }
 
+
   return (
-    <div className={s.container}>
-      <div className={s.main}>
+      <div className={s.main} >
         <div className={s.header}>
           <p className={s.header_text}>Cart</p>
           <img src={closeBtn} alt="" onClick={cartClose} className={s.header_closeCart}/>
@@ -84,7 +83,6 @@ const Cart = () => {
            <button className={s.itogBtn}>Chek out</button>
         </div>
       </div>
-    </div>
     
   );
 }

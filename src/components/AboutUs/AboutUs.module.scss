@@ -1,0 +1,28 @@
+.container{
+    padding: 60px 120px;
+}
+.item{
+    display: flex;
+    gap: 60px;
+}
+.item_header{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #383838; 
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.item_mainText{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2em;
+    color: #697586;
+}
+.item_pic{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}

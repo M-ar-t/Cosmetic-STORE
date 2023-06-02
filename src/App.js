@@ -15,6 +15,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import React, { Suspense } from 'react';
 import Preloader from './components/Preloader/Preloader';
 import { useSelector } from 'react-redux';
+import FooterPart from './components/Home/FooterPart';
 
 
 // ..
@@ -42,6 +43,7 @@ function App() {
     
       </Routes>
       </Suspense>
+      <FooterPart/>
     </div>
   );
 }

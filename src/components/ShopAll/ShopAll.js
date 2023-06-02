@@ -7,10 +7,13 @@ import Stars from './Stars';
 const ShopAll =() =>{
   const dipatch = useDispatch()
   const tovar = useSelector(state => state.main.products)
-  // const cart = useSelector(state => state.cart.cart)
+  const clicked = useSelector(state => state.main.clicked)
+
 
   const addToCart=(el)=>{
     dipatch({type:"ADD-TO-CART", payload:el})
+    dipatch({type:"EMPTY-CART", payload:false})
+    dipatch({type:"TOTAL-SUM", payload:el.price})
   }
   return (
     <div className={s.main}>    
@@ -22,9 +25,14 @@ const ShopAll =() =>{
           <Stars starsCount = {el.stars}/>
           <p className={s.product_desc}>there should be a product description here</p>
           <p className={s.product_price}>{el.price} ₽</p>
-          <button className={s.product_btn} onClick={()=>addToCart(el)}>Add to bag</button>
+          <button id ={el.id} className={s.product_btn} onClick={()=>{
+            addToCart(el)         
+            dipatch({type:"CLIK-BUTTON"})
+            setTimeout(()=> dipatch({type:"CLIK-BUTTON"}),1500)      
+          }}>Add to bag</button>
         </div>)
 })}
+    {clicked && <div  data-aos="fade-right" data-aos-duration="500" className={s.productAdded}> ✓ product added</div>}
     </div>
   );
 }

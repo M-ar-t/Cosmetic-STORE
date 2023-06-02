@@ -38,6 +38,9 @@ display: flex;
 .container_rightItem{
     margin-right: 20px;
 }
+.container_rightItem:last-child{
+    margin-right: 0px;
+}
 .container_img{
     height: 24px;
     width: 24px;
@@ -58,8 +61,20 @@ display: flex;
 }
 .container_linkBlok{
     text-align: center;
+    position: relative;
 }
 .container_linkBlok:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.fillCart{
+    transform: all .6s;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(6, 226, 105);
+    border-radius: 10px;
 }

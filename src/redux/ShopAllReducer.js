@@ -64,7 +64,8 @@ let initialState = {
     price: '4 485',
     stars:3
     },
-  ]
+  ],
+  clicked: false
 };
 
 
@@ -72,6 +73,8 @@ export const mainReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD-PRODUCT":
      break;
+    case "CLIK-BUTTON":
+      return {...state, clicked:!state.clicked}
 
     default:
       return state;

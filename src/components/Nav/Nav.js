@@ -4,11 +4,13 @@ import logoImg from "../../img/bloom_beauty.png"
 import searchImg from "../../img/Search.png"
 import accountImg from "../../img/account.png"
 import cartImg from "../../img/cart.png"
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 // import Cart from '../Cart/Cart';
 
 function Nav() {
   const dipatch = useDispatch()
+
+  const cartIsEmpty = useSelector(state => state.cart.cartIsEmpty)
 
   const cartOpen = () => {
     dipatch({type:"OPEN-CART"})
@@ -62,8 +64,9 @@ function Nav() {
 
         <button onClick={cartOpen}>
             <div className={s.container_linkBlok}>
-            <img className={s.container_img} src={cartImg} alt='cart'/>
-            <p className={s.container_text}>Cart</p> 
+                <img className={s.container_img} src={cartImg} alt='cart'/>
+                {!cartIsEmpty && <div className={s.fillCart}></div>}
+                <p className={s.container_text}>Cart</p> 
             </div>
           </button>
         </li>

@@ -1,9 +1,10 @@
 .main{
     font-family: 'Poppins';
-    padding: 100px 120px;
+    padding: 100px 80px 100px 120px;
     display: grid;
     grid-template-columns: repeat(4,auto);
     overflow-wrap: break-word;
+    
 }
 
 .product{
@@ -69,4 +70,18 @@ margin-bottom: 10px;
    transform: scale(1.08);
    transition: all .3s;
     cursor: pointer;    
+}
+
+.productAdded{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    position: fixed;
+    top:0;
+    right: 0;
+    padding: 20px 60px;
+    color:white;
+    background-color: rgb(126, 158, 117);
+    z-index: 111111;
 }

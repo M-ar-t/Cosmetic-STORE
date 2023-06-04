@@ -25,7 +25,7 @@ function MiddlePart() {
                 <div className={s.middlePart_picItem}><img src={middlePart_pic_7} alt=""/></div>
                 <div className={s.middlePart_picItem}><img src={middlePart_pic_8} alt=""/></div>
               </div>
-              <NavLink to='./aboutus' className={`${s.btn} ${s.btn_center}`}>Follow us</NavLink>
+              <NavLink to='./aboutus' className={`${s.btn} ${s.btn_center}`}>About us</NavLink>
           </div>
   );
 }

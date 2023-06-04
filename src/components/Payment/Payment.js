@@ -59,7 +59,7 @@ function Payment() {
                     </div>
                 </div>
                 <div className={s.paymentBlok}>
-                    <h1>Payment</h1>
+                    <p className={s.paymentBlok_header}>Payment</p>
                     <div className={s.checkPayBlok}>
                         <div className={s.checkPayBlok_item}>
                             <input className={s.checkPayBlok_radioInput} type="radio" id="creditCard" name="pay" value="creditCard" />

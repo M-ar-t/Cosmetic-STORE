@@ -15,13 +15,16 @@ import { useSelector } from 'react-redux';
 import FooterPart from './components/Home/FooterPart';
 import Payment from './components/Payment/Payment';
 
+
+
 AOS.init();
 function App() {
   const ShopAll = React.lazy(() => import('./components/ShopAll/ShopAll'));
   const cartShow = useSelector(state => state.cart.cartIsOpen)
 
-  return (
+  
 
+  return (
     <div className="App">  
       {cartShow && <Cart/>}  
       <Nav/>

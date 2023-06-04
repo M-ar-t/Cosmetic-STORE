@@ -57,3 +57,12 @@ textarea{
     cursor: pointer;
     transform: scale(1.2);
 }
+.notAllFields{
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    border: 1px solid red;
+    padding: 40px;
+}

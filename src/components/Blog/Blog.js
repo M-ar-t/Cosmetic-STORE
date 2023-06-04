@@ -7,10 +7,10 @@ import AddPostForm from "./AddPostForm";
 function Blog() {
   const data = useSelector(state => state.blog.data)
   const isShowForm = useSelector(state => state.blog.showForm)
-  const dipatch = useDispatch()
+  const dispatch = useDispatch()
 
   const showForm =() =>{
-    dipatch({type:"SHOW-FORM"})  
+    dispatch({type:"SHOW-FORM"})  
   }
 
   return (
@@ -21,8 +21,9 @@ function Blog() {
           <p>add new post</p>
           </button>
          <div className={s.bloks}>
-            {data.map(el => 
-            <BlogItem date ={el.date} header ={el.header} text = {el.text} img ={el.img}/>)}
+          {console.log(data)}
+            {data.map((el,index) => 
+            <BlogItem key ={index+1} keyEl ={index+1} date ={el.date} header ={el.header} text = {el.text} img ={el.img}/>)}
       </div> 
     </div>
 

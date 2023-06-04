@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import s from "./Cart.module.scss"
 import closeBtn from "../../img/closeBtn.png"
 import deleteProductPic from "../../img/deleteProduct.png"
+import { NavLink } from "react-router-dom";
 
 
 const Cart = () => {
@@ -63,7 +64,8 @@ const Cart = () => {
                             <button className={s.cartItem_btnPlus} onClick={()=>countIncrement(el.id,el.price)}>+</button> 
                         </div>
                         <button className={s.deleteProductBtn}>
-                            <img src={deleteProductPic} alt="" className={s.deleteProductPic} onClick={()=>deleteProduct(el.id,el.count, el.price)}/>
+                            <img src={deleteProductPic} alt="" className={s.deleteProductPic}
+                             onClick={()=>deleteProduct(el.id,el.count, el.price)}/>
                         </button>
                      </div>
                   </div>
@@ -80,7 +82,7 @@ const Cart = () => {
               <div className={s.subtotal_text}>Subtotal</div>
               <div className={s.subtotal_price}>{totalSum} ₽</div>
            </div>
-           <button className={s.itogBtn}>Chek out</button>
+           <NavLink to="/payment" className={s.itogBtn}>Chek out</NavLink>
         </div>
       </div>
     

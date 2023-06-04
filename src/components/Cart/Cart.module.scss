@@ -154,7 +154,7 @@ margin: 0;
     color: #383838;
 }
 .itogBtn{
-    width: 100%;
+    display: block;
     text-align: center;
     padding: 10px 87px;
     font-weight: 600;
@@ -162,4 +162,7 @@ margin: 0;
     background-color: #F5A3B7;
     color: white;
     border-radius: 4px;
+}
+.itogBtn:hover{
+    background-color: #dd99aa;
 }

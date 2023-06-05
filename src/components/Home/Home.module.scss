@@ -65,7 +65,7 @@ h1{
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    align-items: center;
+    margin-bottom: 20px ;
     text-transform: uppercase;
     color: #383838;
     position: relative;
@@ -134,11 +134,14 @@ transform: scale(1.1);
 }
 .logoBlok_text{
     display: flex;
-    line-height: 20px;
+    line-height: 1.5em;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 .logoBlok_img{
     margin-right: 12px;
+    width: 16px;
+    height: 16px;
 }
 .infoBlok{
     display: flex;
@@ -199,6 +202,7 @@ transform: scale(1.1);
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .signUpBlok_arrow{
     margin-left: 8px;
@@ -211,6 +215,7 @@ transform: scale(1.1);
 }
 .signUpBlok_link:hover{
     transform: scale(1.01);
+
     .signUpBlok_arrow{
         transform: translate(5px);
     }

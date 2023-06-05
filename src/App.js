@@ -16,17 +16,17 @@ import FooterPart from './components/Home/FooterPart';
 import Payment from './components/Payment/Payment';
 
 
-
 AOS.init();
 function App() {
+
   const ShopAll = React.lazy(() => import('./components/ShopAll/ShopAll'));
   const cartShow = useSelector(state => state.cart.cartIsOpen)
-
-  
+  const accountShow = useSelector(state => state.account.accountIsOpen)
 
   return (
     <div className="App">  
       {cartShow && <Cart/>}  
+      {accountShow && <Account/>}  
       <Nav/>
       <Suspense fallback ={<Preloader/>}>
       <Routes>

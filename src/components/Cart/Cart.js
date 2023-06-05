@@ -9,22 +9,22 @@ const Cart = () => {
 
   const cart = useSelector(state=>state.cart.cart)
   const totalSum = useSelector(state=>state.cart.totalSum)
-  const dipatch = useDispatch()
+  const dispatch = useDispatch()
 
-  cart.length < 1 && dipatch({type:"EMPTY-CART",payload:true})
+  cart.length < 1 && dispatch({type:"EMPTY-CART",payload:true})
 
   const cartClose = () => {
-    dipatch({type:"OPEN-CART"})  
+    dispatch({type:"OPEN-CART"})  
   }
 
   const countIncrement = (id,price) => {
-    dipatch({type:"COUNT-INCREMENT", id})
-    dipatch({type:"TOTAL-SUM", payload:price})
+    dispatch({type:"COUNT-INCREMENT", id})
+    dispatch({type:"TOTAL-SUM", payload:price})
   }
 
   const countDecrement = (id,price) => {
-    dipatch({type:"TOTAL-SUM-DEC", payload:{price,id}})
-    dipatch({type:"COUNT-DECREMENT", id})
+    dispatch({type:"TOTAL-SUM-DEC", payload:{price,id}})
+    dispatch({type:"COUNT-DECREMENT", id})
   }
 
   const getAmount = (id) =>{
@@ -32,13 +32,13 @@ const Cart = () => {
     }
   const deleteProduct = (id, count, price) =>{
     const priceReady = count * Number(price.replace(' ',''))
-    dipatch({type:"TOTAL-SUM-DEC-ALL", payload:{priceReady, id}})
-    dipatch({type:"DELETE-PRODUCT", id})
+    dispatch({type:"TOTAL-SUM-DEC-ALL", payload:{priceReady, id}})
+    dispatch({type:"DELETE-PRODUCT", id})
     }
 
 
   return (
-      <div className={s.main} >
+      <div className={s.main} data-aos="fade-left"  data-aos-duration="400" >
         <div className={s.header}>
           <p className={s.header_text}>Cart</p>
           <img src={closeBtn} alt="" onClick={cartClose} className={s.header_closeCart}/>
@@ -82,7 +82,7 @@ const Cart = () => {
               <div className={s.subtotal_text}>Subtotal</div>
               <div className={s.subtotal_price}>{totalSum} ₽</div>
            </div>
-           <NavLink to="/payment" className={s.itogBtn}>Chek out</NavLink>
+           <NavLink to="/payment" className={s.itogBtn} onClick={cartClose}>Chek out</NavLink>
         </div>
       </div>
     

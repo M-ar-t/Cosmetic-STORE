@@ -17,10 +17,10 @@ function BlogItem(props) {
   }
 
   return (
-    <div className={s.content}>
+    <div className={s.content} >
       {showAllBlog  && <BlgReadMore id ={blogId}/>}
         <img className={s.pic} src={props.img ? props.img  : picUndef}  onError={({ currentTarget }) => {
-    currentTarget.onerror = null; // prevents looping
+    currentTarget.onerror = null;
     currentTarget.src=picUndef;
   }} 
   alt=""/>

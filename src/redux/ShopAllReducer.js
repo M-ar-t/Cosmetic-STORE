@@ -64,7 +64,44 @@ let initialState = {
     price: '4 485',
     stars:3
     },
+    {
+    img: "https://api.rivegauche.ru/medias6/?context=bWFzdGVyfHByb2R1Y3RzfDM3NTU4MXxpbWFnZS9qcGVnfHByb2R1Y3RzL2g3My9oMmMvMTE1MDU0NTU1MzAwMTQuanBnfGYwOWFjN2NkOGVjY2U4YjU2NjVmN2JhYTJjMGQ5OTBmMzkyYWE4NjM1YmQ0YWRlNzk0MjI1MWQ1OGQwODZkN2I",
+    article: "",
+    title: "Ronda jewerelly box jbl-w01 ",
+    id: 9,
+    price: '760',
+    stars:5
+    },
+    {
+    img: "https://api.rivegauche.ru/medias6/?context=bWFzdGVyfHByb2R1Y3RzfDQzNTc4MnxpbWFnZS9qcGVnfHByb2R1Y3RzL2hjNC9oNDgvMTE1MTMyMTk1Nzk5MzQuanBnfDQ3ZjY0MWI3NjQ5N2IwOTVlN2YwZDNlNDYwYWQ5MWFmOGI1MzhjZjNmZjM0ZmM2Y2ZhZTZkYWE3NjVlNGIxZWM",
+    article: "",
+    title: "Bespecial brownie",
+    id: 10,
+    price: '399',
+    stars:4
+    },
+    {
+    img: "https://api.rivegauche.ru/medias6/?context=bWFzdGVyfHByb2R1Y3RzfDI5MDY2OHxpbWFnZS9qcGVnfHByb2R1Y3RzL2g1Mi9oZmMvMTE0OTU0NTU0MjQ1NDIuanBnfGRkN2FjZjM4OTUzY2QwMWY3NzI2MGZlMjg5NmM2ZWMxMmIwYTY4OWIwMjdjYWMwMmI5NjJlNjBiN2Y5YjJkZDM",
+    article: "",
+    title: "Lavelle collection eyebrow duo set",
+    id: 11,
+    price: '149',
+    stars:5
+    },
+    {
+    img: "https://api.rivegauche.ru/medias6/?context=bWFzdGVyfHByb2R1Y3RzfDI2MzM1OHxpbWFnZS9qcGVnfHByb2R1Y3RzL2gxOC9oNWQvMTE1MTIyNjEyNDcwMDYuanBnfDU3OTZjYWQ2NDJlNmY4ZjQ5ZDEwMzBkOGI0ODQxMWU4MjI1OTYwMDRkM2E5ZDU3N2QyYzU2NjdlMTdmMWVkMWQ",
+    article: "",
+    title: "La miso gold hydrogel eye patch",
+    id: 12,
+    price: '255',
+    stars:3
+    },
   ],
+
+
+
+
+
   products: [{
     img:"https://api.rivegauche.ru/medias6/?context=bWFzdGVyfHByb2R1Y3RzfDEzMTI5NnxpbWFnZS9qcGVnfHByb2R1Y3RzL2hjNC9oMTgvMTE1MTIwMzc5OTg2MjIuanBnfGQzZDI4ZjQxNDg0MzI4OTkxYjBjZGQ0MDcwNzQzNWJkOGZlOGYxYThhZTc3YjQxZGQ3OGYxZGFmMWRmNjQxMDU",
     article:"",
@@ -142,6 +179,10 @@ export const mainReducer = (state = initialState, action) => {
     case "PROCESSING-ENTER-SYMBOL":
       const text = action.text.toLowerCase();
       return {...state, products: state.productsOrigin.filter(el => el.title.toLowerCase().includes(text))}
+    
+      case "PRICE-FILTER":     
+      return {...state, products: state.productsOrigin.filter(el => Number(el.price.replace(' ','')) > action.minVal &&
+      Number(el.price.replace(' ','')) < action.maxVal)}
 
     case "ALL-PRODUCTS":
       return {...state, products: state.productsOrigin}

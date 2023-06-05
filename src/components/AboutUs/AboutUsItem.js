@@ -3,7 +3,7 @@ import s from "./AboutUs.module.scss"
 function AboutUsItem(props) {
   return (
 
-      <div className={s.item}>
+      <div className={s.item} data-aos="zoom-in-up" data-aos-duration="1000" >
          {props.even === true ? <div className={s.item_text}>
                 <h1 className={s.item_header}>{props.header}</h1>
                 <p className={s.item_mainText}>{props.main_text}</p>

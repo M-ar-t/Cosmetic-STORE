@@ -7,26 +7,30 @@ import cartImg from "../../img/cart.png"
 import {useDispatch, useSelector} from "react-redux";
 
 function Nav() {
-  const dipatch = useDispatch()
+  
+  const dispatch = useDispatch()
   const navigate = useNavigate();
 
   const cartIsEmpty = useSelector(state => state.cart.cartIsEmpty)
   const input = useSelector(state => state.nav.isInput)
 
   const cartOpen = () => {
-    dipatch({type:"OPEN-CART"})
+    dispatch({type:"OPEN-CART"})
+  }
+  const accountOpen = () => {
+    dispatch({type:"OPEN-ACCOUNT"})
   }
   const showInput = () => {
-    dipatch({type:"SHOW-INPUT"})
+    dispatch({type:"SHOW-INPUT"})
     !input && navigate("/shopall")
   }
   const processingEnterSymbol = (e) => {
     const text = e.target.value
     console.log(e.target.value);
-    dipatch({type:"PROCESSING-ENTER-SYMBOL", text})
+    dispatch({type:"PROCESSING-ENTER-SYMBOL", text})
   }
   const allProducts = () => {
-    dipatch({type:"ALL-PRODUCTS"})
+    dispatch({type:"ALL-PRODUCTS"})
   }
 
 
@@ -42,12 +46,7 @@ function Nav() {
         <li > 
               <NavLink  to="/shopall" className={({ isActive }) => isActive ? s.activeLink : s.container_middleItem}>Shop All</NavLink>
         </li>
-        {/* <li >
-          <NavLink to="/bestsellers" className={({ isActive }) => isActive ? s.activeLink : s.container_middleItem}>Bestsellers</NavLink>
-        </li>
-        <li >
-          <NavLink to="/collection" className={({ isActive }) => isActive ? s.activeLink : s.container_middleItem}>Collection</NavLink>
-        </li> */}
+       
         <li >
           <NavLink to="/aboutus" className={({ isActive }) => isActive ? s.activeLink : s.container_middleItem}>About us</NavLink>
         </li>
@@ -73,12 +72,12 @@ function Nav() {
            
         </li>
         <li className={s.container_rightItem}>
-        <NavLink to="/account" >
+        <button onClick={accountOpen}>
             <div className={s.container_linkBlok}>
             <img className={s.container_img} src={accountImg} alt='account'/>
             <p className={s.container_text}>Account</p> 
             </div>
-          </NavLink>
+          </button>
 
         </li>
         <li className={s.container_rightItem}>

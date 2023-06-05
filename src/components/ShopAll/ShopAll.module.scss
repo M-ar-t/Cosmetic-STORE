@@ -1,6 +1,6 @@
 .main{
     font-family: 'Poppins';
-    padding: 100px 80px 100px 120px;
+    padding: 0px 80px 100px 120px;
     display: grid;
     grid-template-columns: repeat(4,auto);
     overflow-wrap: break-word;
@@ -15,16 +15,20 @@
 
 .product:hover{
     cursor: pointer;
-    .product_pic{
-        transform: scale(1.2);
-        transition: all .3s;
-        object-fit: contain;
-    }
+    
 }
+.wrapper{
+    overflow: hidden;
+}
+
 .product_pic{
     width: 289px;
     height: 289px;
     object-fit: contain;
+    transition: all .3s;
+}
+.product_pic:hover{
+    transform: scale(1.15);
     transition: all .3s;
 }
 
@@ -56,6 +60,7 @@ margin-bottom: 10px;
     line-height: 24px;
     text-transform: capitalize;
     color: #383838;
+    margin-bottom: 10px;
 }
 .product_btn{
     background: #FFFFFF;
@@ -84,4 +89,54 @@ margin-bottom: 10px;
     color:white;
     background-color: rgb(126, 158, 117);
     z-index: 111111;
+}
+
+.priceRange{ 
+    display: flex;
+    margin: 30px 80px 30px 120px;
+    max-width: 450px;
+    border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.12) 0px 7px 29px 0px;
+}
+.priceRange_div{
+    padding: 10px 20px 20px;
+}
+.priceRange_header{
+    font-weight: 500;
+    font-size: 14px;;
+    text-transform: capitalize;
+    color: #383838;
+    margin-bottom: 5px;
+}
+.priceRange_value,
+.priceRange_curValue{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #697586;
+    margin-bottom: 10px;
+}
+.priceRange_btnDiv{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    
+}
+.priceRange_apply{
+    font-weight: 500;
+    font-size: 14px;;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    background-color: #f7b8c8;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.priceRange_apply:hover{
+    cursor: pointer;
+    background-color: #e5aab8;
 }

@@ -14,6 +14,7 @@ p{
     box-shadow: rgba(14, 30, 37, 0.22) 300px 300px 300px 900px, rgba(14, 30, 37, 0.22) 300px 300px 300px 300px;
     border-radius: 6px;
     padding: 20px;
+    z-index: 111;
 }
 
 .closeBtn{
@@ -143,4 +144,10 @@ p{
     font-size: 16px;
     color: #697586;
     margin-right: 5px;
+}
+.recover_item:hover,
+.create_item:hover{
+   text-decoration: underline 1.3px rgb(160, 160, 160);
+
+
 }

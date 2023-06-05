@@ -10,8 +10,15 @@ import call from "../../img/Call.png"
 import messaage from "../../img/Message.png"
 import location from "../../img/Loc.png"
 import arrowRight from "../../img/Arrow - Right.png"
+import { useDispatch } from "react-redux";
 
 function FooterPart() {
+  const dispatch = useDispatch()
+
+  const accountOpen = () => {
+    dispatch({type:"OPEN-ACCOUNT"})
+  }
+
   return ( 
         <div className={s.footer}>
              <div className={s.footer_topPanel}>
@@ -59,8 +66,8 @@ function FooterPart() {
                   <p className={s.signUpBlok_header}>SIGN UP FOR EMAILS</p>
                   <p className={s.signUpBlok_text}>Stay informed, subscribe to our newsletter now!</p>
                  <input className={s.signUpBlok_input} placeholder="Email"></input>
-                 <p className={s.signUpBlok_link} ><NavLink className={s.signUpBlok_btn} to="/account">Subscribe
-                 <img className={s.signUpBlok_arrow} src={arrowRight} alt='arrow'/></NavLink></p> 
+                 <p className={s.signUpBlok_link} ><button className={s.signUpBlok_btn} to="/account" onClick={accountOpen}>Subscribe
+                 <img className={s.signUpBlok_arrow} src={arrowRight} alt='arrow'/></button></p> 
                 </div>
              </div>
           </div>

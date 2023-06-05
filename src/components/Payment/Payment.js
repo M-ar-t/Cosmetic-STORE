@@ -39,7 +39,7 @@ function Payment() {
     
 
     return (
-      <div className={s.container}>     
+      <div className={s.container} data-aos="fade-down"  data-aos-duration="500">     
             <div  className={s.contactInfo}>
                 <div className={s.inputBlok}>
                     <div className={s.inputBlok_item}>

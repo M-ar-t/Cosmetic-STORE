@@ -16,7 +16,9 @@ import FooterPart from './components/Home/FooterPart';
 import Payment from './components/Payment/Payment';
 
 
-AOS.init();
+AOS.init({
+  once: true,
+ });
 function App() {
 
   const ShopAll = React.lazy(() => import('./components/ShopAll/ShopAll'));

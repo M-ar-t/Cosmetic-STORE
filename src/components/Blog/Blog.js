@@ -4,20 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import editPost from "../../img/editPost.png"
 import AddPostForm from "./AddPostForm";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 
 function Blog() {
-  const ScrollToTop = () => {
-    const { pathname } = useLocation();
-  
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-  
-    return null;
-  }
-  ScrollToTop()
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const data = useSelector(state => state.blog.data)
   const isShowForm = useSelector(state => state.blog.showForm)

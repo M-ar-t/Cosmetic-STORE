@@ -29,7 +29,7 @@ function Blog() {
          <div className={s.bloks}>
           {console.log(data)}
             {data.map((el,index) => 
-            <BlogItem key ={index+1} keyEl ={index+1} date ={el.date} header ={el.header} text = {el.text} img ={el.img}/>)}
+            <BlogItem data-aos="zoom-in-right" key ={index+1} keyEl ={index+1} date ={el.date} header ={el.header} text = {el.text} img ={el.img}/>)}
       </div> 
     </div>
 

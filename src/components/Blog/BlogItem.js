@@ -17,7 +17,7 @@ function BlogItem(props) {
   }
 
   return (
-    <div className={s.content} >
+    <div className={s.content} data-aos="fade-up" data-aos-duration="1000" >
       {showAllBlog  && <BlgReadMore id ={blogId}/>}
         <img className={s.pic} src={props.img ? props.img  : picUndef}  onError={({ currentTarget }) => {
     currentTarget.onerror = null;

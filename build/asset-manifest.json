@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/M-ar-t/Cosmetic-STORE/static/css/main.426f7d00.css",
+    "main.js": "/M-ar-t/Cosmetic-STORE/static/js/main.54bd1dc6.js",
+    "static/css/459.bcf418d5.chunk.css": "/M-ar-t/Cosmetic-STORE/static/css/459.bcf418d5.chunk.css",
+    "static/js/459.1cbb5009.chunk.js": "/M-ar-t/Cosmetic-STORE/static/js/459.1cbb5009.chunk.js",
+    "static/media/first-screen.png": "/M-ar-t/Cosmetic-STORE/static/media/first-screen.d1570cdb891912fca7c8.png",
+    "static/media/blog_pic2.png": "/M-ar-t/Cosmetic-STORE/static/media/blog_pic2.1302165d3e35b7a6d915.png",
+    "static/media/blog_pic1.png": "/M-ar-t/Cosmetic-STORE/static/media/blog_pic1.07855b318ed4195a20a0.png",
+    "static/media/inst shots (7).png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots (7).cb00af128bdc5f85b020.png",
+    "static/media/inst shots (4).png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots (4).854d49d95de2f0f83c1f.png",
+    "static/media/inst shots (1).png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots (1).e2f95bd4d775e4d94680.png",
+    "static/media/inst shots (5).png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots (5).001c05ae25b3d6ffabcd.png",
+    "static/media/inst shots (2).png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots (2).228fc20057206eaf4e9c.png",
+    "static/media/inst shots (3).png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots (3).1c49d365c72a69012437.png",
+    "static/media/PicUndef.jpg": "/M-ar-t/Cosmetic-STORE/static/media/PicUndef.16ad51e0b8a09da6f5c8.jpg",
+    "static/media/inst shots (6).png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots (6).0156ca6f390b7da67012.png",
+    "static/media/inst shots.png": "/M-ar-t/Cosmetic-STORE/static/media/inst shots.d9fe0022098b12b5de95.png",
+    "static/media/blog_pic3.png": "/M-ar-t/Cosmetic-STORE/static/media/blog_pic3.516a259a234d6d7ff6d7.png",
+    "static/media/cart.gif": "/M-ar-t/Cosmetic-STORE/static/media/cart.62fb32ad37dccaec874b.gif",
+    "static/media/poppins-v20-latin-600.woff2": "/M-ar-t/Cosmetic-STORE/static/media/poppins-v20-latin-600.91145014c0350c248ed2.woff2",
+    "static/media/poppins-v20-latin-regular.woff2": "/M-ar-t/Cosmetic-STORE/static/media/poppins-v20-latin-regular.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-v20-latin-700.woff2": "/M-ar-t/Cosmetic-STORE/static/media/poppins-v20-latin-700.d86662fe776dae29ea78.woff2",
+    "static/media/poppins-v20-latin-500.woff2": "/M-ar-t/Cosmetic-STORE/static/media/poppins-v20-latin-500.08491d3f7fe7ae88ef44.woff2",
+    "index.html": "/M-ar-t/Cosmetic-STORE/index.html",
+    "main.426f7d00.css.map": "/M-ar-t/Cosmetic-STORE/static/css/main.426f7d00.css.map",
+    "main.54bd1dc6.js.map": "/M-ar-t/Cosmetic-STORE/static/js/main.54bd1dc6.js.map",
+    "459.bcf418d5.chunk.css.map": "/M-ar-t/Cosmetic-STORE/static/css/459.bcf418d5.chunk.css.map",
+    "459.1cbb5009.chunk.js.map": "/M-ar-t/Cosmetic-STORE/static/js/459.1cbb5009.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.426f7d00.css",
+    "static/js/main.54bd1dc6.js"
+  ]
+}

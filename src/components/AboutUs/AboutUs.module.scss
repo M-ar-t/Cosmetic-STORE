@@ -1,4 +1,5 @@
 .container{
+    margin-top: 85px;
     padding: 60px 120px;
 }
 .item{
@@ -26,3 +27,8 @@
     height: 500px;
     object-fit: contain;
 }
+.item_picContainer{
+    margin: auto;
+}
+
+@import "./AboutUs-media.module.scss"

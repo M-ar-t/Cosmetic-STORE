@@ -11,8 +11,10 @@ a{
     width: 100%;
     height: auto;
     background: url("../../img/first-screen.png") no-repeat ;
+    background-position: center;
     color: #383838;
     margin-bottom: 80px;
+    margin-top: 85px;
 }
 .container_info{
     padding: 102px 120px;
@@ -37,6 +39,7 @@ h1{
     background-color: #F5A3B7;
     color: white;
     border-radius: 4px;
+    text-align: center;
 }
 .btn_center{
     margin: 0 auto;
@@ -62,6 +65,7 @@ h1{
     margin-bottom: 15px;
 }
 .middlePart_text{
+    padding: 0px 10px;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -74,40 +78,19 @@ h1{
         font-size: 24px;
     }
 }
-.middlePart_text::before{
-    content: '';
-    background: url("../../img/bloom.png") no-repeat;
-    display: block;
-    height: 13px;
-    width: 50px;
-    align-items: center;
-    position: absolute;
-    left: 360px;
-    top: calc(50% - 8px);
-}
-.middlePart_text::after{
-    content: '';
-    background: url("../../img/bloom\ \(1\).png") no-repeat;
-    display: block;
-    height: 13px;
-    width: 50px;
-    align-items: center;
-    position: absolute;
-    right: 360px;
-    top: calc(50% - 8px);
 
-}
 .footer{
     background-color: #252525;
     padding: 0px 100px;
 }
 .footer_topPanel{
     display: flex;
+    max-width: 400px;
+    justify-content: space-between;
     padding: 40px 0px;
-    justify-content: center;
+    margin: 0 auto;
 }
 .footer_social{
-    margin-right: 60px;
     width: 30px;
     height: 30px;
 }
@@ -119,18 +102,22 @@ transform: scale(1.1);
 }
 .footer_middlePanel{
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 30px;
 }
 .logoBlok{
     max-width: 225px;
     margin-right: 84px;
+    margin-bottom: 20px;
 }
 .infoBlok{
     max-width: 582px;
     margin-right: 37px;
+    margin-bottom: 20px;
 }
 .signUpBlok{
     max-width: 289x;
+    margin-bottom: 20px;
 }
 .logoBlok_text{
     display: flex;
@@ -145,6 +132,7 @@ transform: scale(1.1);
 }
 .infoBlok{
     display: flex;
+    flex-wrap: wrap;
 }
 .infoBlok_item{
  margin-right: 36px;
@@ -220,3 +208,5 @@ transform: scale(1.1);
         transform: translate(5px);
     }
 }
+
+@import "./Home-media.module.scss"

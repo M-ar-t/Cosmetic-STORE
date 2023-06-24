@@ -1,0 +1,77 @@
+@media (max-width:1300px){
+    .container_middleItem{
+        padding-right: 30px;
+    }
+    .activeLink{
+        padding-right: 30px;
+    }
+    .container_rightItem{
+        margin-right: 20px;
+    }
+    }
+
+@media (max-width:990px){
+    .continer{
+        padding: 18px 30px;
+    }
+      .container_middleList{
+        display: flex;
+        padding-right: 20px;
+        }
+        .container_middleItem{
+            padding-right: 20px;
+            font-size: 12px;
+        }    
+}
+
+
+@media (max-width:780px){
+  
+    .container_middleList{
+        padding-right: 0px;
+        padding-bottom: 40px;
+        }
+       
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .continer__inner{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top:0;
+        left: -150%;
+        padding: 90px 60px;
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff;
+        transition: .4s; 
+        justify-content: unset;
+        align-items: center;
+    }
+    
+    
+    .activecloseBtn{
+        left: 95%;    
+        transition: .4s; 
+    }
+
+    .activeBurgerMenu{
+        left: 0;    
+        transition: .4s; 
+        overflow: hidden;
+    }
+    .container_middleList{     
+      display: flex;
+      flex-direction: column;
+    }
+    .container_middleList >li{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container_middleList >li>a{
+        font-size: 22px;
+    }
+    
+}

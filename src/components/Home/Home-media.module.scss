@@ -1,0 +1,35 @@
+@media (max-width:1230px){
+    .middlePart_pics{
+        grid-template-columns: repeat(2,289px);
+    }
+    .container{
+        background-position: left;
+        margin-top: 0px;
+    }
+        
+    }
+
+@media (max-width:780px){
+    .container_info{
+        box-sizing: border-box; 
+        padding: 60px;
+    }
+}
+@media (max-width:600px){
+    .middlePart_pics{
+        grid-template-columns: repeat(1,289px);
+    }
+}
+@media (max-width:470px){
+    .container_info{
+        padding: 0px 40px 40px 40px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:420px){
+    .signUpBlok_input{
+        width: 150px;
+    }
+}

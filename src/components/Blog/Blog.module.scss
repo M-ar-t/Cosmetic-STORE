@@ -1,10 +1,11 @@
 .container{
     margin-top: 85px;
-    padding: 30px 120px 60px;
+    padding: 30px 35px 60px;
 }
 .bloks{
-    display:grid;
-    grid-template-columns: repeat(3, auto);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 20px;
 }
 .content{
@@ -88,3 +89,4 @@
     left: calc(50% - 350px);
     background-color: white;
 }
+@import "./Blog-media.module.scss"

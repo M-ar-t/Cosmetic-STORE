@@ -1,0 +1,40 @@
+@media (max-width:600px){
+    .container{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        border-radius: unset;
+    }
+
+    .input{
+    width: 90%;
+    box-sizing: border-box;
+    }
+
+    .btn{
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .line{
+        width: 90%;
+    }
+
+    .btnContainer{
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .btnContainer_btn{
+        width: 100%;
+    }
+
+    .recover,.create{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}

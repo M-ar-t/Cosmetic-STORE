@@ -1,0 +1,51 @@
+@media (max-width:780px){
+    .container{
+       flex-direction: column;
+       align-items: center;
+    }
+    .contactInfo{ 
+        box-sizing: border-box;
+        width: 80%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    .order{
+        box-sizing: border-box;
+        width: 80%;
+    }
+}
+@media (max-width:570px){
+    .inputBlok_item{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .inputBlok_name{       
+        margin-right: 0px;
+        text-align:center ;
+    }
+    .inputBlok_input{       
+        text-align: center;
+    }
+    .cardInfoBlok_inputInRow{
+       flex-direction: column;
+    }
+    .cardInfoBlok_date,
+    .cardInfoBlok_code{
+    width: 95%;
+    }
+    .cardInfoBlok_btns{
+       display: block;
+    }
+    .cardInfoBlok_btnRightItem{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cardInfoBlok_btnLeftItem{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+

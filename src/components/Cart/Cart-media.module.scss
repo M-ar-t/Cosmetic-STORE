@@ -1,0 +1,27 @@
+@media (max-width:950px){
+    .main{
+        box-sizing: border-box;    
+        width: 50%;
+    }
+    .itogBtn{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .main_itog{
+        width: calc(50% - 40px);
+    }
+}
+@media (max-width:780px){
+    .main{
+        box-sizing: border-box;    
+        width: 100%;
+    }
+    .itogBtn{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .main_itog{
+        width: calc(100% - 40px);
+    }
+}
+

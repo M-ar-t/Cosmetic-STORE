@@ -1,9 +1,10 @@
 .container{
-    width: 600px;
-    max-height: 600px;
+    width: 100%;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     padding: 40px;
+    background-color: white;
     box-shadow: rgba(14, 30, 37, 0.22) 300px 300px 300px 900px, rgba(14, 30, 37, 0.22) 300px 300px 300px 300px;
 }
 
@@ -27,7 +28,7 @@ input[type="date"]{
 }
 textarea{
     resize: vertical;
-    min-height: 100px;
+    min-height: 60px;
     max-height: 200px;
 }
 .add{   
@@ -65,4 +66,11 @@ textarea{
     color: rgb(255, 0, 0);
     border: 1px solid red;
     padding: 40px;
+}
+
+@media (max-width:780px){
+    .container{
+        width: 80%;
+    }
+   
 }

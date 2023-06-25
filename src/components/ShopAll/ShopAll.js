@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {useSelector} from "react-redux";
 import s from "./ShopAll.module.scss"
 import {useDispatch} from "react-redux";
@@ -6,6 +6,10 @@ import Stars from './Stars';
 import Slider from "react-slider"
 
 const ShopAll =() =>{
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const dipatch = useDispatch()
   const tovar = useSelector(state => state.main.products)
   const clicked = useSelector(state => state.main.clicked)

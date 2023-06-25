@@ -31,12 +31,18 @@
         padding-right: 0px;
         padding-bottom: 40px;
         }
-       
+        .container_middleItem{
+            padding-right: 0px;
+        } 
+        .activeLink{
+            padding-right: 0px;
+        }
     .burger{
         display: block;
         cursor: pointer;
     }
     .continer__inner{
+        box-sizing: border-box;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -53,7 +59,7 @@
     
     
     .activecloseBtn{
-        left: 95%;    
+        left: 90%;    
         transition: .4s; 
     }
 

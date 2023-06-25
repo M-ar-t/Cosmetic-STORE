@@ -5,12 +5,13 @@
     width: 600px;
     height: 600px;
     position: fixed;
-    top: 60px;
+    top: 15%;
     left: calc(50% - 350px);
     background-color: white;
     padding: 20px 30px;
     overflow-y: auto;
     box-shadow: rgba(14, 30, 37, 0.22) 300px 300px 300px 900px, rgba(14, 30, 37, 0.22) 300px 300px 300px 300px;
+    z-index: 99999;
 }
 .closeBtn{
     margin-bottom: 10px;
@@ -59,3 +60,5 @@
     height: 100px;
     text-align: justify;
 }
+
+@import "./BlgReadMore-media.module.scss"

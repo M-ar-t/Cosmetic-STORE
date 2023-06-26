@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Cosmetic-STORE/static/css/main.b9e5a548.css",
-    "main.js": "/Cosmetic-STORE/static/js/main.3d511d55.js",
+    "main.css": "/Cosmetic-STORE/static/css/main.ad500e4e.css",
+    "main.js": "/Cosmetic-STORE/static/js/main.b0d6e1b1.js",
     "static/css/459.22c1ba71.chunk.css": "/Cosmetic-STORE/static/css/459.22c1ba71.chunk.css",
     "static/js/459.5f93667b.chunk.js": "/Cosmetic-STORE/static/js/459.5f93667b.chunk.js",
     "static/media/first-screen.png": "/Cosmetic-STORE/static/media/first-screen.d1570cdb891912fca7c8.png",
@@ -23,13 +23,13 @@
     "static/media/poppins-v20-latin-700.woff2": "/Cosmetic-STORE/static/media/poppins-v20-latin-700.d86662fe776dae29ea78.woff2",
     "static/media/poppins-v20-latin-500.woff2": "/Cosmetic-STORE/static/media/poppins-v20-latin-500.08491d3f7fe7ae88ef44.woff2",
     "index.html": "/Cosmetic-STORE/index.html",
-    "main.b9e5a548.css.map": "/Cosmetic-STORE/static/css/main.b9e5a548.css.map",
-    "main.3d511d55.js.map": "/Cosmetic-STORE/static/js/main.3d511d55.js.map",
+    "main.ad500e4e.css.map": "/Cosmetic-STORE/static/css/main.ad500e4e.css.map",
+    "main.b0d6e1b1.js.map": "/Cosmetic-STORE/static/js/main.b0d6e1b1.js.map",
     "459.22c1ba71.chunk.css.map": "/Cosmetic-STORE/static/css/459.22c1ba71.chunk.css.map",
     "459.5f93667b.chunk.js.map": "/Cosmetic-STORE/static/js/459.5f93667b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9e5a548.css",
-    "static/js/main.3d511d55.js"
+    "static/css/main.ad500e4e.css",
+    "static/js/main.b0d6e1b1.js"
   ]
 }

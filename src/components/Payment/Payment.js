@@ -3,12 +3,16 @@ import mastercard from "../../img/master-card.png"
 import visa from "../../img/visa.png"
 import googlePay from "../../img/google-pay.png"
 import payPal from "../../img/PayPal.png"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import deleteProductPic from "../../img/deleteProduct.png"
 import { useDispatch, useSelector } from "react-redux"
 import { NavLink } from "react-router-dom"
 
 function Payment() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
     const cart = useSelector(state=>state.cart.cart)
     const totalSum = useSelector(state=>state.cart.totalSum)
     const shippingSum =500

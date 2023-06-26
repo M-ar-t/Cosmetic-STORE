@@ -21,8 +21,13 @@
     }
 }
 @media (max-width:470px){
+    .container{
+        background-color: #f5e0e5;
+        background-image: none;
+        padding-bottom: 30px;
+    }
     .container_info{
-        padding: 0px 40px 40px 40px;
+        padding: 80px 40px 0px 40px;
         justify-content: center;
         display: flex;
         flex-direction: column;

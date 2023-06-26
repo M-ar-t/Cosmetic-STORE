@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Cosmetic-STORE/static/css/main.928ba0e8.css",
-    "main.js": "/Cosmetic-STORE/static/js/main.8324276c.js",
-    "static/css/459.bcf418d5.chunk.css": "/Cosmetic-STORE/static/css/459.bcf418d5.chunk.css",
-    "static/js/459.1cbb5009.chunk.js": "/Cosmetic-STORE/static/js/459.1cbb5009.chunk.js",
+    "main.css": "/Cosmetic-STORE/static/css/main.b9e5a548.css",
+    "main.js": "/Cosmetic-STORE/static/js/main.3d511d55.js",
+    "static/css/459.22c1ba71.chunk.css": "/Cosmetic-STORE/static/css/459.22c1ba71.chunk.css",
+    "static/js/459.5f93667b.chunk.js": "/Cosmetic-STORE/static/js/459.5f93667b.chunk.js",
     "static/media/first-screen.png": "/Cosmetic-STORE/static/media/first-screen.d1570cdb891912fca7c8.png",
     "static/media/blog_pic2.png": "/Cosmetic-STORE/static/media/blog_pic2.1302165d3e35b7a6d915.png",
     "static/media/blog_pic1.png": "/Cosmetic-STORE/static/media/blog_pic1.07855b318ed4195a20a0.png",
@@ -23,13 +23,13 @@
     "static/media/poppins-v20-latin-700.woff2": "/Cosmetic-STORE/static/media/poppins-v20-latin-700.d86662fe776dae29ea78.woff2",
     "static/media/poppins-v20-latin-500.woff2": "/Cosmetic-STORE/static/media/poppins-v20-latin-500.08491d3f7fe7ae88ef44.woff2",
     "index.html": "/Cosmetic-STORE/index.html",
-    "main.928ba0e8.css.map": "/Cosmetic-STORE/static/css/main.928ba0e8.css.map",
-    "main.8324276c.js.map": "/Cosmetic-STORE/static/js/main.8324276c.js.map",
-    "459.bcf418d5.chunk.css.map": "/Cosmetic-STORE/static/css/459.bcf418d5.chunk.css.map",
-    "459.1cbb5009.chunk.js.map": "/Cosmetic-STORE/static/js/459.1cbb5009.chunk.js.map"
+    "main.b9e5a548.css.map": "/Cosmetic-STORE/static/css/main.b9e5a548.css.map",
+    "main.3d511d55.js.map": "/Cosmetic-STORE/static/js/main.3d511d55.js.map",
+    "459.22c1ba71.chunk.css.map": "/Cosmetic-STORE/static/css/459.22c1ba71.chunk.css.map",
+    "459.5f93667b.chunk.js.map": "/Cosmetic-STORE/static/js/459.5f93667b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.928ba0e8.css",
-    "static/js/main.8324276c.js"
+    "static/css/main.b9e5a548.css",
+    "static/js/main.3d511d55.js"
   ]
 }

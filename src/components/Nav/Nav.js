@@ -50,7 +50,7 @@ function Nav() {
     <div className={s.continer}>   
       <ul>
         <li className={s.container_leftList}>
-            <NavLink  to="/" onClick={burgerMenuShow} ><img src={logoImg} alt='logo'/></NavLink>
+            <NavLink  to="/"><img src={logoImg} alt='logo'/></NavLink>
         </li>
       </ul>
       <div className={toggle? s.burgerNone:s.burger}
